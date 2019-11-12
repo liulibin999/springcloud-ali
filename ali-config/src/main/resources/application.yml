@@ -1,5 +1,11 @@
 server:
   port: 8082
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+
 spring:
   application:
     name: ali-config-server
@@ -7,12 +13,8 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/liulibin999/springcloud-ali.git
+          uri: https://github.com/liulibin999/config-1904b.git
           search-paths: /
           username:
           password:
       label: master
-eureka:
-  client:
-    service-url:
-      defaultZone: http://localhost:8761/eureka

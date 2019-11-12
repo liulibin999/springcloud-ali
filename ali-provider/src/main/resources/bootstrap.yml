@@ -1,0 +1,8 @@
+spring:
+  cloud:
+    config:
+      label: master  # 分支
+      profile: dev  # 环境
+      discovery:
+        enabled: true  # 开启服务发现
+        service-id: ali-config-server
