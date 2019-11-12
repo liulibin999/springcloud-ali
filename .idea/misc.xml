@@ -11,6 +11,7 @@
         <option value="$PROJECT_DIR$/ali-consumer-feign/pom.xml" />
         <option value="$PROJECT_DIR$/ali-kafka/pom.xml" />
         <option value="$PROJECT_DIR$/ali-zuul/pom.xml" />
+        <option value="$PROJECT_DIR$/ali-config/pom.xml" />
       </list>
     </option>
   </component>

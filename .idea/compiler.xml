@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="ali-config" />
         <module name="ali-consumer-feign" />
         <module name="ali-service-api" />
         <module name="ali-common" />
@@ -21,6 +22,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="ali-config" options="-parameters" />
       <module name="ali-consumer-feign" options="-parameters" />
       <module name="ali-eureka" options="-parameters" />
       <module name="ali-kafka" options="-parameters" />
