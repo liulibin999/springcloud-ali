@@ -1,0 +1,24 @@
+server:
+  port: 8763
+
+
+spring:
+  application:
+    name: ali-zuul
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+
+zuul:
+  routes:
+    api-a:
+      path: /api-a/**
+      serviceId: ali-consumer-feign
+
+
+         #可以配置多个路由请求转发
+         #abc:
+         # path: /api-b/**
+         # serviceId: springcloud-feign

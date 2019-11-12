@@ -1,0 +1,15 @@
+#配置Eureka注册服务 Eureka Server
+server:
+  port: 8761
+
+#配置Eureka
+eureka:
+  instance:
+    hostname: localhost #配置实例地址
+  client:
+    register-with-eureka: false
+    fetch-registry: false #阻止eureka自身项目注册到注册中心
+    service-url:
+      defaultZone: hppt://${eureka.instance.hostname}:${server.port}/eureka
+  server:
+    enable-self-preservation: false # 关闭自我保护机制 ， 默认为true开启
